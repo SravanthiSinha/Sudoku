@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background"
+    android:orientation="horizontal"
+    android:padding="15dip" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         android:layout_gravity="center" 
+         android:paddingLeft="20dip"
+         android:paddingRight="20dip" 
+         android:paddingTop="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/main_title"
+            android:textSize="24.5sp" 
+            />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" 
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/continue_button"
+                    android:text="@string/continue_Label" />
+
+                <Button
+                    android:id="@+id/newGame_button"
+                    android:text="@string/newGame_Label" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/about_button"
+                    android:text="@string/about_Label" />
+
+                <Button
+                    android:id="@+id/exit_button"
+                    android:text="@string/exit_Label" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
